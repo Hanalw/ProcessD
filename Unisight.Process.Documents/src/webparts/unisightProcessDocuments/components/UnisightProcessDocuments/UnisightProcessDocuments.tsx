@@ -1262,6 +1262,9 @@ const UnisightProcessDocuments: FC<IUnisightProcessDocumentsProps> = ({
         case 'documents':
           columnsToShow = ViewFields;
           break;
+        case 'list':
+          columnsToShow = ViewFields;
+          break;
         case 'pages':
           columnsToShow = getDefaultColumns();
           break;
