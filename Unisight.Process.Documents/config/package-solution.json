@@ -1,0 +1,41 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "unisight-process-documents-client-side-solution",
+    "id": "7d089bb1-6554-44e9-a247-436f084b7138",
+    "version": "2.2.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "iconPath": "icons/AppIcon.png",
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.20.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "Unisight - Processdokument description"
+      },
+      "longDescription": {
+        "default": "Unisight - Processdokument description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "Unisight - Processdokument",
+        "description": "The feature that activates elements of the unisight-process-documents solution.",
+        "id": "45c93cb6-59d9-4576-aec8-d80967974373",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/unisight-process-documents.sppkg"
+  }
+}

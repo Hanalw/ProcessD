@@ -1,0 +1,20 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "unisight-process-documents-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/unisightProcessDocuments/UnisightProcessDocumentsWebPart.js",
+          "manifest": "./src/webparts/unisightProcessDocuments/UnisightProcessDocumentsWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "UnisightProcessDocumentsWebPartStrings": "lib/webparts/unisightProcessDocuments/loc/{locale}.js",
+    "PropertyControlStrings": "node_modules/@pnp/spfx-property-controls/lib/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js"
+  }
+}

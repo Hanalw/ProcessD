@@ -1,0 +1,134 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+.unisightProcessDocuments {
+  .container {
+    max-width: 700px;
+    margin: 0px auto;
+    //box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .row {
+    @include ms-Grid-row;
+    @include ms-fontColor-black;
+    //background-color: $ms-color-themeDark;
+  }
+  .resultsRow {
+    @include ms-Grid-row;
+    @include ms-fontColor-white;
+    margin: 1.25em 0 0 0;
+  }
+  .column {
+    @include ms-Grid-col;
+    @include ms-lg10;
+    @include ms-xl8;
+    @include ms-xlPush2;
+    @include ms-lgPush1;
+  }
+  .resultsColumn {
+    @include ms-Grid-col;
+    @include ms-lg10;
+    @include ms-xl8;
+    @include ms-xlPush2;
+    @include ms-lgPush1;
+  }
+  padding-left: 8px;
+  color: "[theme:bodyText, default: #323130]";
+  color: var(--bodyText);
+}
+
+.tabList > div:first-of-type {
+  margin-bottom: 30px;
+}
+
+.docLinks {
+  
+  text-decoration: none;
+  color: '[theme:bodyText, default: #323130]';
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.links {
+font-size: 14px !important;
+}
+
+:global(.manage-tabs) {
+  background-color: "[theme:themePrimary]" !important;
+  color: "[theme:white]" !important;
+  border: "[theme:themePrimary]" !important;
+}
+
+:global(.ms-ContextualMenu-item):not(:last-of-type) {
+  border-bottom: 1px solid #edebe9;
+}
+
+:global(.ms-DetailsHeader) {
+  padding-top: 0 !important;
+}
+
+.description {
+  width: auto;
+}
+
+.contextualMenu {
+  padding: 10px !important;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.contextualMenuIcon {
+  display: inline-block;
+  width: 20px;
+}
+
+.filterDiv {
+  position: relative;
+}
+
+.cleardiv {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.filterChip, .cleardiv span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3f2f1;
+  padding: 2px 8px;
+  margin: 0 6px 6px 6px;
+  border-radius: 12px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.filterChipIcon {
+  margin-left: 4px;
+  font-size: 10px;
+  margin-top: 1px;
+}
+
+// FILTER PANEL
+.filterpanel {
+  .checkboxes {
+    &:first-of-type {
+      margin-top: 12px;
+    }
+    &:not(:last-of-type) {
+      margin-bottom: 12px;
+    }
+  }
+
+  .buttons:first-of-type {
+    margin-right: 12px;
+  }
+}
+
+.tabSpinner {
+  height: 5px;
+  width: 5px;
+  background: #000;
+  border-radius: 50%;
+}
